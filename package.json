@@ -1,0 +1,24 @@
+{
+  "name": "gulp-all",
+  "version": "1.0.0",
+  "description": "Promise.all for gulp streams, so you can compose a bunch of 'private' subtasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "amio/gulp-all",
+  "author": "Amio <amio.cn@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amio/gulp-all/issues"
+  },
+  "homepage": "https://github.com/amio/gulp-all#readme",
+  "keywords": [
+    "gulp",
+    "plugin",
+    "private",
+    "task",
+    "subtask",
+    "promise"
+  ]
+}
