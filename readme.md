@@ -7,11 +7,12 @@ Promise.all for gulp streams, so you can compose a bunch of "private" subtasks.
 For example:
 
 ```javascript
+var all = require('gulp-all')
+
+var styl_dir = 'path/to/styles/dir'
+var js_dir   = 'path/to/scripts/dir'
+
 function build() {
-
-	var styl_dir = 'path/to/styles/dir'
-	var js_dir = 'path/to/scripts/dir'
-
 	return all(
 		gulp.src(styl_dir + '/**/*')
 			// build Styles
