@@ -1,5 +1,8 @@
 # gulp-all
 
+[![npm version](https://img.shields.io/npm/v/gulp-all.svg)](http://www.npmjs.com/package/gulp-all)
+[![dependency status](https://david-dm.org/amio/gulp-all.svg)](https://david-dm.org/amio/gulp-all)
+
 Promise.all for gulp streams, so you can compose a bunch of "private" subtasks.
 
 ## Usage
