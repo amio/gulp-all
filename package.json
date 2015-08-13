@@ -4,11 +4,15 @@
   "description": "Promise.all for gulp streams, so you can compose a bunch of 'private' subtasks.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test.js | faucet",
+    "preversion": "npm run test",
+    "patch": "npm version patch -m 'v%s'",
+    "minor": "npm version minor -m 'v%s'",
+    "major": "npm version major -m 'v%s'"
   },
   "repository": "amio/gulp-all",
   "author": "Amio <amio.cn@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/amio/gulp-all/issues"
   },
@@ -16,9 +20,13 @@
   "keywords": [
     "gulp",
     "plugin",
-    "private",
     "task",
     "subtask",
     "promise"
-  ]
+  ],
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "tape": "^4.1.0",
+    "through2": "^2.0.0"
+  }
 }
