@@ -8,6 +8,7 @@ module.exports = function () {
   var tasks = args.map(function (task) {
     return new Promise(function (res, rej) {
       task
+        .resume()
         .on('finish', res)
         .on('error', rej)
     })
