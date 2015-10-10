@@ -5,6 +5,8 @@
 
 Promise.all for gulp streams, so you can compose a bunch of "private" subtasks.
 
+> NOTE: ONLY FOR GULP@4.0
+
 ## Usage
 
 For example:
