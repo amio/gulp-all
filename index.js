@@ -1,5 +1,7 @@
 'use strict'
 
+var exhaust = require('stream-exhaust')
+
 module.exports = function () {
   var args = Array.isArray(arguments[0])
     ? arguments[0]
@@ -7,7 +9,7 @@ module.exports = function () {
 
   var tasks = args.map(function (task) {
     return new Promise(function (res, rej) {
-      task
+      exhaust(task)
         .on('finish', res)
         .on('error', rej)
     })

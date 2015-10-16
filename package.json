@@ -28,5 +28,8 @@
     "gulp": "gulpjs/gulp#4.0",
     "tape": "^4.1.0",
     "through2": "^2.0.0"
+  },
+  "dependencies": {
+    "stream-exhaust": "^1.0.1"
   }
 }
