@@ -1,6 +1,6 @@
 {
   "name": "gulp-all",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Promise.all for gulp streams, so you can compose a bunch of 'private' subtasks.",
   "main": "index.js",
   "scripts": {
