@@ -8,9 +8,8 @@ module.exports = function () {
     : [].slice.call(arguments)
 
   var tasks = args.map(function (task) {
-    if(task instanceof Promise)
-      return task;
-    
+    if(task instanceof Promise) return task
+
     return new Promise(function (res, rej) {
       exhaust(task)
         .on('finish', res)
