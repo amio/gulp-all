@@ -1,5 +1,7 @@
 # gulp-all
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/amio/gulp-all.svg)](https://greenkeeper.io/)
+
 [![npm version](https://img.shields.io/npm/v/gulp-all.svg)](http://www.npmjs.com/package/gulp-all)
 [![dependency status](https://david-dm.org/amio/gulp-all.svg)](https://david-dm.org/amio/gulp-all)
 
